@@ -1,0 +1,285 @@
+.App{
+  font-family: 'Roboto Mono', monospace;
+}
+
+/*---PAGINACION---*/
+
+.pagination-container {
+  background-color: #ffffff5d;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 50px auto;
+}
+.pagination-number-container{
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  gap: 1em;
+  list-style: none;
+  padding-left: 0;
+}
+.pagination-prev-next{
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  width: 30px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(181, 28, 11);
+  border-radius: 15px;
+}
+.page-number {
+  font-size: 1em;
+  color: rgb(7, 7, 7);
+  cursor: pointer;
+  border-radius: 8px;
+}
+.page-active{
+  background-color: rgb(197, 28, 9);
+}
+
+/*  ------LOGIN-----   */
+
+.super-title{
+  font-size: 12em;
+  color: black;
+}
+
+
+.sign-up-section{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  align-content: center;
+  color: rgb(254, 254, 254);
+  background-color: rgb(0, 0, 0);
+  background-image: url('https://i.gifer.com/IThC.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.centered-text{
+  width: min(20em);
+  display: grid;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.475);
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.input-sign-up{
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  padding: 6px 8px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.input-sign-up:focus-visible{
+  outline: none;
+  box-shadow: inset red 1px 1px 3px ;
+}
+
+.btn-sign-up{
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  border: solid black 2px;
+  background-color: rgb(218, 36, 36);
+  color: white;
+  cursor: pointer;
+}
+
+.btn-sign-up:hover{
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 400px) {
+  .sign-up-section{
+    font-size: larger;
+  }
+}
+
+/* -----Pokedex section---- */
+
+.greetings{
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.input-container-pokedex{
+  margin: 30px;
+  font-weight: 100;
+}
+
+.input-search{
+  width: 100%;
+  margin: 20px auto;
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+}
+
+.input-text{
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  color: black;
+  background-color: rgba(240, 248, 255, 0.292);
+}
+
+.input-select{
+  width: 50%;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px;
+  justify-self: center;
+}
+
+
+
+.pokedex-screen{
+  width: 100%;
+  background-color: rgb(250, 248, 248);
+  text-align: center;
+  background-image: url('https://wallpaperaccess.com/full/3952031.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.container-poke-cards{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  justify-content: center;
+  padding: 50px;
+}
+
+.poke-card{
+  width: 19em;
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 1px 2px 8px black;
+}
+
+.poke-card:hover{
+  width: 19em;
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: inset 1px 2px 8px black;
+}
+
+.poke-card:hover img{
+  width: 100%;
+  transform: scale(1.2);
+}
+.poke-card img{
+  width: 100%;
+}
+
+
+/*-----pokeInfo-----*/
+
+.poke-info-screen{
+  width: 100%;
+}
+
+.pokeinfo{
+  display: grid;
+  width: 95%;
+  margin: 10px auto;
+  border-radius: 50px;
+  padding: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.title-poke-info{
+  grid-column: span 2;
+}
+
+.pokeinfo h2{
+  font-size: 2em;
+  font-weight: 800;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.274);
+  border-radius: 50px;
+}
+
+.type{
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.274);
+  border-radius: 50px;
+  width: max-content;
+  margin: 5px auto;
+  padding: 0 15px;
+}
+
+.moves-info{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  list-style: none;
+  border-radius: 30px;
+  padding: 20px;
+  overflow: auto;
+  margin: 10px;
+  height: 500px;
+}
+
+
+.abilities-info{
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+  width: 15em;
+  margin-top: 30px;
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  border-radius: 30px;
+  padding: 20px;
+  overflow: auto;
+}
+
+/*----FOOTER----*/
+
+.footer{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  background-color: rgb(26, 30, 26);
+  font-size: 2em;
+  margin-top: 1em;
+  background-image: linear-gradient(160deg, rgb(166, 11, 16) 0%, #aaa9a0 100%);
+}
+
+.footer a{
+  color: rgb(0, 0, 0);
+}
+
+
+@media (max-width: 900px) {
+  
+}
